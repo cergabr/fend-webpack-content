@@ -90,10 +90,11 @@
 /*!***********************************!*\
   !*** ./src/client/img/clouds.png ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack:///./src/client/img/clouds.png?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"86699cf558867e90d4d839d11973688d.png\");\n\n//# sourceURL=webpack:///./src/client/img/clouds.png?");
 
 /***/ }),
 
@@ -105,7 +106,7 @@ eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_formHandler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/formHandler */ \"./src/client/js/formHandler.js\");\n/* harmony import */ var _js_nameChecker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nameChecker */ \"./src/client/js/nameChecker.js\");\n/* harmony import */ var _img_clouds_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/clouds.png */ \"./src/client/img/clouds.png\");\n/* harmony import */ var _img_clouds_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_clouds_png__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nconsole.log(_js_nameChecker__WEBPACK_IMPORTED_MODULE_1__[\"checkForName\"])\r\nalert(\"Hallo\")\r\n\r\n\n\n//# sourceURL=webpack:///./src/client/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_formHandler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/formHandler */ \"./src/client/js/formHandler.js\");\n/* harmony import */ var _js_nameChecker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nameChecker */ \"./src/client/js/nameChecker.js\");\n/* harmony import */ var _img_clouds_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/clouds.png */ \"./src/client/img/clouds.png\");\n\n\n\nconsole.log(_js_nameChecker__WEBPACK_IMPORTED_MODULE_1__[\"checkForName\"]);\nalert(\"Hallo\");\n\n//# sourceURL=webpack:///./src/client/index.js?");
 
 /***/ }),
 
@@ -117,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"handleSubmit\", function() { return handleSubmit; });\nfunction handleSubmit(event) {\r\n    event.preventDefault()\r\n\r\n    // check what text was put into the form field\r\n    let formText = document.getElementById('name').value\r\n    checkForName(formText)\r\n\r\n    console.log(\"::: Form Submitted :::\")\r\n    fetch('http://localhost:8000/test')\r\n    .then(res => res.json())\r\n    .then(function(res) {\r\n        document.getElementById('results').innerHTML = res.message\r\n    })\r\n}\r\n\n\n//# sourceURL=webpack:///./src/client/js/formHandler.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"handleSubmit\", function() { return handleSubmit; });\nfunction handleSubmit(event) {\n  event.preventDefault(); // check what text was put into the form field\n\n  var formText = document.getElementById('name').value;\n  checkForName(formText);\n  console.log(\"::: Form Submitted :::\");\n  fetch('http://localhost:8000/test').then(function (res) {\n    return res.json();\n  }).then(function (res) {\n    document.getElementById('results').innerHTML = res.message;\n  });\n}\n\n//# sourceURL=webpack:///./src/client/js/formHandler.js?");
 
 /***/ }),
 
@@ -129,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"checkForName\", function() { return checkForName; });\nfunction checkForName(inputText) {\r\n    console.log(\"::: Running checkForName :::\", inputText);\r\n    let names = [\r\n        \"Picard\",\r\n        \"Janeway\",\r\n        \"Kirk\",\r\n        \"Archer\",\r\n        \"Georgiou\"\r\n    ]\r\n\r\n    if(names.includes(inputText)) {\r\n        alert(\"Welcome, Captain!\")\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./src/client/js/nameChecker.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"checkForName\", function() { return checkForName; });\nfunction checkForName(inputText) {\n  console.log(\"::: Running checkForName :::\", inputText);\n  var names = [\"Picard\", \"Janeway\", \"Kirk\", \"Archer\", \"Georgiou\"];\n\n  if (names.includes(inputText)) {\n    alert(\"Welcome, Captain!\");\n  }\n}\n\n//# sourceURL=webpack:///./src/client/js/nameChecker.js?");
 
 /***/ })
 
