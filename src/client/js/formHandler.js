@@ -5,7 +5,7 @@ export function handleSubmit(event) {
     checkForName(formText);
     
     console.log("::: Form Submitted :::");
-    fetch("http://localhost:8000/test")
+    fetch("http://localhost:3000/test")
         .then(res => res.json())
         .then(function(res) {
             document.getElementById("results").innerHTML = res.message;
