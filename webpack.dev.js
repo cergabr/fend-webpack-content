@@ -8,6 +8,9 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = {
     mode: "development",
 	entry: "./src/client/index.js",
+    output: {
+        path: path.resolve(process.cwd(),"dist"),
+    },
     devtool: "source-map",
     devServer: {
         port: "8000",
