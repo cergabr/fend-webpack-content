@@ -13,7 +13,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "resolve-cwd": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
