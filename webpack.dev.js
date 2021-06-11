@@ -16,7 +16,6 @@ module.exports = {
     devtool: "source-map",
     devServer: {
         port: "8000",
-        injectClient: false,
       },
     module:{
         rules: [
@@ -34,9 +33,9 @@ module.exports = {
                 ],
             },
             {
-                test: /\.scss$/,
+                test: /.s?css$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-            }
+            },
         ]
     },
     plugins:[
