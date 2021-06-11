@@ -10,14 +10,13 @@ module.exports = {
 	entry: "./src/client/index.js",
     output: {
         path: path.resolve(process.cwd(),"dist"),
-        library: {
-            name: "Client",
-            type: "var",
-        },
+        library: "Client",
+        libraryTarget: "var"
     },
     devtool: "source-map",
     devServer: {
         port: "8000",
+        injectClient: false,
       },
     module:{
         rules: [
